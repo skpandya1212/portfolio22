@@ -1,0 +1,173 @@
+.footer{
+    width:100%;
+
+    padding:80px 8% 40px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+
+    margin-top:100px;
+}
+
+/* TOP */
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:50px;
+}
+
+.footer-top h2{
+    font-size:42px;
+
+    max-width:600px;
+
+    line-height:1.3;
+}
+
+/* RESUME BUTTON */
+
+.resume-btn{
+    padding:16px 30px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    background:#38bdf8;
+
+    color:white;
+
+    transition:0.4s;
+}
+
+.resume-btn:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,0.3);
+}
+
+/* SOCIALS */
+
+.footer-socials{
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:50px;
+}
+
+.footer-socials a{
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,0.05);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    color:white;
+
+    font-size:22px;
+
+    transition:0.4s;
+}
+
+.footer-socials a:hover{
+    transform:translateY(-6px);
+
+    border-color:#38bdf8;
+
+    color:#38bdf8;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,0.2);
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-top:30px;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+}
+
+/* TOP BUTTON */
+
+.top-btn{
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+.top-btn:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,0.3);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px){
+
+    .footer{
+        padding:70px 6% 30px;
+    }
+
+    .footer-top{
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .footer-top h2{
+        font-size:32px;
+    }
+
+    .footer-socials{
+        justify-content:center;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+    }
+}
