@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* NAVBAR BASE */
 .navbar{
     width:90%;
@@ -80,6 +86,7 @@
 .nav-links{
     display:flex;
     gap:35px;
+    list-style:none;
 }
 
 .nav-links li a{
@@ -87,6 +94,7 @@
     font-size:18px;
     color:#cbd5e1;
     transition:0.3s;
+    text-decoration:none;
 }
 
 .nav-links li a::after{
@@ -133,15 +141,15 @@
     box-shadow:0 0 20px #38bdf8;
 }
 
+/* HAMBURGER */
 .hamburger{
     display:none;
-    font-size:28px;
+    font-size:30px;
     cursor:pointer;
     color:white;
-    z-index:1100;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 @media screen and (max-width:992px){
 
     .navbar{
@@ -150,37 +158,59 @@
         height:80px;
     }
 
+    /* 🔥 PREMIUM MOBILE MENU (FIXED + MODERN) */
     .nav-links{
-        position:absolute;
+        position:fixed;
 
         top:90px;
         right:15px;
 
-        width:250px;
-        height:auto;
+        width:270px;
 
-        padding:20px 0;
+        padding:25px 0;
 
-        background:#0f172a;
-
-        border-radius:15px;
-
+        display:flex;
         flex-direction:column;
-
-        justify-content:center;
         align-items:center;
 
-        transition:0.4s;
+        gap:18px;
 
-        border:1px solid rgba(255,255,255,0.1);
+        background:rgba(15,23,42,0.75);
+        backdrop-filter:blur(25px);
 
-        box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        border:1px solid rgba(56,189,248,0.25);
+        border-radius:18px;
+
+        box-shadow:
+            0 10px 40px rgba(0,0,0,0.4),
+            0 0 25px rgba(56,189,248,0.15);
 
         transform:translateX(120%);
+        transition:0.45s ease;
+
+        z-index:9999;
     }
 
     .nav-links.active{
         transform:translateX(0);
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links li a{
+        display:block;
+        width:100%;
+        padding:10px 0;
+        border-radius:10px;
+        font-size:18px;
+    }
+
+    .nav-links li a:hover{
+        background:rgba(56,189,248,0.1);
+        color:#38bdf8;
     }
 
     .hamburger{
@@ -188,6 +218,7 @@
     }
 }
 
+/* SMALL SCREEN */
 @media screen and (max-width:768px){
 
     .nav-text h2{

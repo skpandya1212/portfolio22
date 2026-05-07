@@ -39,7 +39,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* CENTER MENU */}
+      {/* MENU */}
       <ul className={menu ? "nav-links active" : "nav-links"}>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -52,7 +52,7 @@ function Navbar() {
       <div className="nav-right">
         <motion.a
           href="/resume.pdf"
-          download="Siddharth_Resume.pdf"
+          download="Sidhdharth_Resume.pdf"
           className="cv-btn"
           whileHover={{ scale: 1.05, y: -3 }}
           whileTap={{ scale: 0.95 }}
@@ -60,10 +60,7 @@ function Navbar() {
           Download CV
         </motion.a>
 
-        <div
-          className="hamburger"
-          onClick={() => setMenu(!menu)}
-        >
+        <div className="hamburger" onClick={() => setMenu(!menu)}>
           ☰
         </div>
       </div>
