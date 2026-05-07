@@ -61,7 +61,7 @@ function Projects() {
 
       tech: ["React", "Framer Motion", "CSS", "Vite"],
 
-      github: "#",
+      github: "https://github.com/skpandya1212/portfolio22",
 
       live: "#",
 
@@ -78,12 +78,11 @@ function Projects() {
 
       tech: ["React", "NodeJS", "MongoDB", "Express"],
 
-      github: "#",
+      github: "https://github.com/skpandya1212/cartify",
 
       live: "https://cartify-gu4h.vercel.app/home",
 
-      seller:
-        "https://cartify-nine-chi.vercel.app/login",
+      seller: "https://cartify-nine-chi.vercel.app/login",
 
       single: false
     }
