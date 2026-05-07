@@ -70,7 +70,7 @@ function Navbar() {
 
           <span>Hello, I'm</span>
 
-          <h2>Siddharth</h2>
+          <h2>Sidhdharth</h2>
 
         </div>
 
