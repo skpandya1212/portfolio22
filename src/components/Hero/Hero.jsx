@@ -45,21 +45,24 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Explore Projects
-          </motion.button>
+          <a href="#projects">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Explore Projects
+            </motion.button>
+          </a>
 
-          <motion.button
-            className="outline"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Contact Me
-          </motion.button>
-
+          <a href="#contact">
+            <motion.button
+              className="outline"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Me
+            </motion.button>
+          </a>
         </motion.div>
 
       </motion.div>
