@@ -103,7 +103,7 @@ function About() {
             transition={{ duration: 0.3 }}
           >
 
-            <h3>10+</h3>
+            <h3>2</h3>
 
             <span>Projects</span>
 
