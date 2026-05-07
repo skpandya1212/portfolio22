@@ -66,7 +66,7 @@ function App() {
                   duration: 1
                 }}
               >
-                Siddharth
+                Sidhdharth
               </motion.h1>
 
               <motion.div
