@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Navbar.css";
 import profile from "../../assets/profile.png";
 
+
 function Navbar() {
 
   const [menu, setMenu] = useState(false);
